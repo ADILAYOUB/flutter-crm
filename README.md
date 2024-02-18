@@ -1,4 +1,4 @@
-# BottleCRM
+# CRM
 
 Free CRM for startups and enterprises.
 
