@@ -19,10 +19,6 @@ import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 
 var screenWidth;
 var screenHeight;
-// Color submitButtonColor = Color.fromRGBO(75, 153, 90, 1);
-// Color bottomNavBarSelectedBGColor = Color.fromRGBO(219, 232, 249, 1);
-// Color bottomNavBarSelectedTextColor = Color.fromRGBO(15, 36, 62, 1);
-// Color bottomNavBarTextColor = Color.fromRGBO(75, 75, 78, 1);
 String currentBottomNavigationIndex = "0";
 String currentTopBarModuleName = "Dashboard";
 Color bottomNavBarTextColor = Color.fromRGBO(75, 75, 78, 1);
@@ -51,7 +47,6 @@ fetchRequiredData() async {
 
 OutlineInputBorder boxBorder() {
   return OutlineInputBorder(
-    // borderRadius: BorderRadius.all(Radius.circular(15)),
     borderSide: BorderSide(width: 0, color: Colors.white),
   );
 }
@@ -74,19 +69,6 @@ Future<bool> onWillPop() {
   }
   exit(0);
 }
-
-// showToast(message) {
-//   Fluttertoast.showToast(
-//     msg: message,
-//     toastLength: Toast.LENGTH_LONG,
-//     gravity: ToastGravity.CENTER,
-//     timeInSecForIosWeb: 1,
-//     backgroundColor: Colors.blue,
-//     textColor: Colors.white,
-//     fontSize: screenWidth / 26,
-//   );
-// }
-
 showToaster(message, context) {
   showToast(
     message,
